@@ -5,6 +5,8 @@ header {
   height: 80px;
   width: 100%;
   margin: 0;
+  position: fixed;
+  z-index: 100;
 }
 header p {
   margin-bottom: auto;
@@ -197,22 +199,24 @@ main .home-menu .menu-wrapper .menu-box .card-group .card .card-body img {
   height: 281px;
   width: 100%;
   background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 main .home-event {
   display: flex;
 }
 main .home-event p {
-  flex: 1;
+  width: 50%;
 }
 main .home-event p > img {
   height: 1079px;
   width: 100%;
 }
 main .home-event .home-sentence {
-  flex: 1;
   background-color: #470023;
   height: 1079px;
-  width: 100%;
+  width: 50%;
   color: #fff;
   padding-left: 76px;
   padding-top: 368px;
@@ -223,6 +227,7 @@ main .home-event .home-sentence h1 {
   border-bottom: solid 2px #764300;
   padding-bottom: 20px;
   width: 744px;
+  box-sizing: border-box;
 }
 main .home-event .home-sentence h2 {
   font-size: 32px;
@@ -344,4 +349,319 @@ footer nav ul li + li {
 }
 footer small {
   color: #959595;
+}
+
+@media only screen and (max-width: 1600px) {
+  header {
+    height: 80px;
+    width: 100%;
+    margin: 0;
+  }
+  header p {
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: 90px;
+  }
+  header p > img {
+    width: 229px;
+    height: 50px;
+    margin: auto;
+  }
+  header nav {
+    margin-right: 70px;
+  }
+  header nav ul {
+    display: flex;
+  }
+  header nav ul li {
+    list-style: none;
+    margin-right: 30px;
+  }
+  header nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    line-height: 80px;
+    font-size: 16px;
+  }
+
+  main .home-mainLogo {
+    height: 830px;
+  }
+  main .home-intro {
+    height: 920px;
+  }
+  main .home-intro .image002 {
+    height: 270px;
+    width: 350px;
+    top: 7%;
+    left: 50%;
+  }
+  main .home-intro .image003 {
+    height: 330px;
+    width: 320px;
+    top: 15%;
+    left: 22%;
+  }
+  main .home-intro .image001 {
+    height: 320px;
+    width: 540px;
+    top: 40%;
+    left: 40%;
+  }
+  main .home-intro .intro-wrapper h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+  }
+  main .home-intro .intro-wrapper p {
+    font-size: 21px;
+  }
+  main .home-intro a {
+    top: 90%;
+    left: 78%;
+  }
+  main .home-menu {
+    height: 900px;
+  }
+  main .home-menu .menu-bg-white {
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  main .home-menu .menu-wrapper {
+    height: 800px;
+  }
+  main .home-menu .menu-wrapper .menu-box a {
+    margin-top: 35px;
+  }
+  main .home-menu .menu-wrapper .menu-box .card-group .card .card-body img {
+    height: 200px;
+  }
+  main .home-event p > img {
+    height: 800px;
+  }
+  main .home-event .home-sentence {
+    height: 800px;
+    width: 50%;
+    padding-top: 210px;
+  }
+  main .home-event .home-sentence h1 {
+    width: 380px;
+  }
+  main .home-contact {
+    height: 600px;
+  }
+  main .home-contact .contact-sentence {
+    height: 350px;
+    width: 65%;
+  }
+  main .home-contact .contact-sentence h2 {
+    font-size: 26px;
+    white-space: nowrap;
+  }
+  main .home-contact .contact-sentence p {
+    font-size: 16px;
+  }
+  main .home-contact .contact-sentence .sentence02 {
+    top: 61%;
+    left: 50%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  main .home-mainLogo {
+    height: 880px;
+  }
+  main .home-intro {
+    height: 900px;
+  }
+  main .home-intro .image002 {
+    height: 250px;
+    width: 350px;
+    top: 6%;
+    left: 50%;
+  }
+  main .home-intro .image003 {
+    height: 300px;
+    width: 320px;
+    top: 15%;
+    left: 20%;
+  }
+  main .home-intro .image001 {
+    height: 300px;
+    width: 480px;
+    top: 37%;
+    left: 40%;
+  }
+  main .home-intro .intro-wrapper {
+    top: 78%;
+    left: 12%;
+  }
+  main .home-intro .intro-wrapper h1 {
+    font-size: 34px;
+    margin-bottom: 20px;
+  }
+  main .home-intro .intro-wrapper p {
+    font-size: 20px;
+  }
+  main .home-intro a {
+    top: 90%;
+    left: 78%;
+  }
+  main .home-menu {
+    height: 850px;
+  }
+  main .home-menu .menu-bg-white {
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  main .home-menu .menu-wrapper {
+    height: 750px;
+  }
+  main .home-menu .menu-wrapper .menu-box {
+    width: 90%;
+  }
+  main .home-menu .menu-wrapper .menu-box .card-group .card {
+    height: 560px;
+  }
+  main .home-menu .menu-wrapper .menu-box .card-group .card .card-body img {
+    height: 200px;
+  }
+  main .home-menu .menu-wrapper .menu-box .card-group .card .card-body h2 {
+    font-size: 20px;
+  }
+  main .home-menu .menu-wrapper .menu-box .card-group .card .card-body .text04 {
+    margin-top: 0px;
+    margin-left: 33px;
+    margin-right: 4px;
+    margin-bottom: 5px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  main .home-mainLogo {
+    height: 700px;
+  }
+  main .home-intro {
+    height: 800px;
+  }
+  main .home-intro .image002 {
+    height: 200px;
+    width: 300px;
+    top: 6%;
+    left: 50%;
+  }
+  main .home-intro .image003 {
+    height: 250px;
+    width: 270px;
+    top: 15%;
+    left: 20%;
+  }
+  main .home-intro .image001 {
+    height: 300px;
+    width: 430px;
+    top: 35%;
+    left: 40%;
+  }
+  main .home-intro a {
+    top: 92%;
+    left: 78%;
+  }
+  main .home-menu {
+    height: 800px;
+  }
+  main .home-menu .menu-wrapper {
+    height: 700px;
+    width: 90%;
+  }
+  main .home-menu .menu-wrapper .menu-box {
+    width: 90%;
+  }
+  main .home-menu .menu-wrapper .menu-box h1 {
+    margin-top: 35px;
+  }
+  main .home-menu .menu-wrapper .menu-box a {
+    font-size: 16px;
+    margin-top: 12px;
+  }
+  main .home-menu .menu-wrapper .menu-box .card-group .card {
+    height: 500px;
+  }
+  main .home-menu .menu-wrapper .menu-box .card-group .card .card-body .card-text {
+    margin-left: 20px;
+  }
+  main .home-menu .menu-wrapper .menu-box .card-group .card .card-body img {
+    height: 200px;
+  }
+  main .home-menu .menu-wrapper .menu-box .card-group .card .card-body .text02 {
+    font-size: 22px;
+    margin-left: 20px;
+  }
+  main .home-menu .menu-wrapper .menu-box .card-group .card .card-body .text03 {
+    font-size: 16px;
+    margin-bottom: 3px;
+  }
+  main .home-menu .menu-wrapper .menu-box .card-group .card .card-body .text04 {
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 4px;
+    margin-bottom: 5px;
+  }
+  main .home-event p > img {
+    height: 600px;
+  }
+  main .home-event .home-sentence {
+    height: 600px;
+    padding-top: 80px;
+  }
+  main .home-event .home-sentence h1 {
+    width: 350px;
+    font-size: 50px;
+    padding-bottom: 10px;
+  }
+  main .home-event .home-sentence h2 {
+    padding-top: 23px;
+    font-size: 28px;
+  }
+  main .home-event .home-sentence p {
+    font-size: 16px;
+  }
+  main .home-event .home-sentence a {
+    padding-right: 50px;
+  }
+  main .home-contact {
+    height: 550px;
+  }
+  main .home-contact .contact-sentence {
+    height: 350px;
+    width: 75%;
+  }
+  main .home-contact .contact-sentence h2 {
+    font-size: 24px;
+    white-space: nowrap;
+  }
+  main .home-contact .contact-sentence p {
+    font-size: 16px;
+  }
+}
+main .topPage {
+  position: relative;
+  background-image: url(../images/kv.jpg);
+  height: 1000px;
+}
+main .topPage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  opacity: 1;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+main .topPage h1 {
+  position: absolute;
+  top: 85%;
+  left: 10%;
+  -ms-transform: translate(-85%, -15%);
+  -webkit-transform: translate(-85%, -15%);
+  transform: translate(-85%, -15%);
 }/*# sourceMappingURL=style.css.map */
