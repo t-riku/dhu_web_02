@@ -655,8 +655,8 @@ main .topPage::before {
   bottom: 0;
   width: 100%;
   opacity: 1;
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 main .topPage h1 {
   color: #fff;
@@ -735,7 +735,6 @@ main .access {
   height: 1190px;
   width: 100%;
   background-image: url(../images/kabebami.jpg);
-  z-index: -100;
   position: relative;
 }
 main .access h2 {
@@ -744,11 +743,24 @@ main .access h2 {
   left: 30%;
   transform: translateY(-50%) translateX(-50%);
   -webkit-transform: translateY(-50%) translateX(-50%);
-  z-index: 2;
+}
+main .access p {
+  position: absolute;
+  top: 25%;
+  left: 29%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  color: #fff;
+  font-size: 24px;
+}
+main .access img {
+  position: absolute;
+  top: 32%;
+  left: 10%;
+  height: auto;
 }
 
 main .topPage {
-  background-image: url(../images/007.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -830,9 +842,80 @@ main .monthly .events-flex {
   font-size: 16px;
 }
 
+#topPage-img-about {
+  background-image: url(../images/kv.jpg);
+}
+
+#topPage-img-event {
+  background-image: url(../images/007.jpg);
+}
+
+#topPage-img-menu {
+  background-image: url(../images/001.jpg);
+}
+
+#topPage-img-news {
+  background-image: url(../images/008.jpg);
+}
+
+main .menuHtml-wrapper {
+  background-color: #212121;
+  height: 4850px;
+  text-align: center;
+}
+main .menuHtml-wrapper .menu-item {
+  margin-bottom: 110px;
+  margin-left: 170px;
+}
+main .menuHtml-wrapper .menu-item h2 {
+  margin-bottom: 90px;
+  text-align: start;
+}
+main .menuHtml-wrapper .menu-item:nth-child(1) {
+  padding-top: 130px;
+}
+main .menuHtml-wrapper .menu-item .row {
+  margin-left: 50px;
+}
+main .menuHtml-wrapper .menu-item .row .col .card {
+  width: 377px;
+  height: 629px;
+  object-fit: cover;
+}
+main .menuHtml-wrapper .menu-item .row .col .card img {
+  height: 408px;
+}
+main .menuHtml-wrapper .menu-item .row .col .card .card-body {
+  height: 221px;
+}
+main .menuHtml-wrapper .menu-item .row .col .card .card-body h3 {
+  font-size: 24px;
+  font-weight: bolder;
+  margin-top: 35px;
+  margin-bottom: 16px;
+}
+main .menuHtml-wrapper .menu-item .row .col .card .card-body p {
+  font-size: 16px;
+}
+main .menuHtml-wrapper .whisky .menu-p-color {
+  color: #fff;
+  text-align: start;
+  margin-top: 90px;
+  font-size: 24px;
+  margin-left: 50px;
+}
+main .menuHtml-wrapper .cocktail, main .menuHtml-wrapper .softDrink {
+  color: #fff;
+  font-size: 24px;
+  text-align: start;
+}
+main .menuHtml-wrapper .cocktail p, main .menuHtml-wrapper .cocktail ul > li, main .menuHtml-wrapper .softDrink p, main .menuHtml-wrapper .softDrink ul > li {
+  margin-left: 50px;
+}
+
 main .news-wrapper {
   background-image: url(../images/kabebami.jpg);
-  height: 3455px;
+  height: 2800px;
   width: 100%;
 }
 main .news-wrapper .news-flex {
@@ -845,9 +928,6 @@ main .news-wrapper .news-flex {
   margin: auto;
   margin-bottom: 88px;
   color: #000000;
-}
-main .news-wrapper .news-flex:nth-child(1) {
-  padding-top: 150px;
 }
 main .news-wrapper .news-flex p > img {
   width: 500px;

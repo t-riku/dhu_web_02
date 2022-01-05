@@ -867,8 +867,8 @@ main {
             bottom: 0;
             width: 100%;
             opacity: 1;
-            backdrop-filter: blur(2px);
-            -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
         }
 
         h1 {
@@ -892,20 +892,6 @@ main {
         width: auto;
         color: #fff;
         position: relative;
-
-        // .heading {
-        //     font-size: 60px;
-        //     font-weight: bolder;
-        //     border-bottom: solid 3px #fff;
-        //     width: 791px;
-        //     padding-left: 35px;
-        //     padding-bottom: 10px;
-        //     position: absolute;
-        //     top: 15%;
-        //     left: 30%;
-        //     transform: translateY(-50%) translateX(-50%);
-        //     -webkit-transform: translateY(-50%) translateX(-50%);
-        // }
 
         h2 {
             position: absolute;
@@ -955,17 +941,10 @@ main {
         width: 791px;
         padding-left: 35px;
         padding-bottom: 15px;
-        // position: absolute;
-        // top: 15%;
-        // left: 30%;
-        // transform: translateY(-50%) translateX(-50%);
-        // -webkit-transform: translateY(-50%) translateX(-50%);
-        // z-index: 2;
         color: #fff;
     }
 
     .carousel-wrapper {
-        // height: 1080px;
 
         .carousel {
             position: relative;
@@ -990,7 +969,6 @@ main {
         height: 1190px;
         width: 100%;
         background-image: url(../images/kabebami.jpg);
-        z-index: -100;
         position: relative;
 
         h2 {
@@ -999,8 +977,28 @@ main {
             left: 30%;
             transform: translateY(-50%) translateX(-50%);
             -webkit-transform: translateY(-50%) translateX(-50%);
-            z-index: 2;
         }
+
+        p {
+            position: absolute;
+            top: 25%;
+            left: 29%;
+            transform: translateY(-50%) translateX(-50%);
+            -webkit-transform: translateY(-50%) translateX(-50%);
+            color: #fff;
+            font-size: 24px;
+        }
+
+        img {
+            position: absolute;
+            top: 32%;
+            left: 10%;
+            height: auto;
+        }
+
+        // iframe {
+        //     z-index: -10;
+        // }
     }
 }
 
@@ -1010,7 +1008,6 @@ main {
 main {
     
     .topPage {
-        background-image: url(../images/007.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
@@ -1023,20 +1020,12 @@ main {
         color: #fff;
         background-color: #212121;
         position: relative;
-        // padding-top: 142px;
-        // padding-left: 167px;
 
         h2 {
             font-size: 60px;
             margin-bottom: 80px;
             padding-top: 142px;
             margin-left: 167px;
-            // position: absolute;
-            // top: 15%;
-            // left: 30%;
-            // transform: translateY(-50%) translateX(-50%);
-            // -webkit-transform: translateY(-50%) translateX(-50%);
-            // z-index: 2;
         }
 
         .events-flex {
@@ -1062,20 +1051,6 @@ main {
                 margin-top: auto;
                 margin-bottom: auto;
 
-                // .new {
-                //     font-size: 32px;
-                //     background-color: #FF9812;
-                //     padding: 10px;
-                //     padding-right: 30px;
-                //     width: 72px;
-                // }
-
-                // .time {
-                //     color: #9B9B9B;
-                //     font-size: 16px;
-                //     font-weight: lighter;
-                // }
-
                 h3 {
                     font-size: 40px;
                     margin-bottom: 23px;
@@ -1095,40 +1070,7 @@ main {
                 }
             }
         }
-
-        // .viewButton {
-        //     text-align: center;
-
-        //     a {
-        //         color: #fff;
-        //         text-decoration: none;
-        //         font-size: 24px;
-        //         border: solid 2px #CDD6DD;
-        //         padding: 22px 60px;
-        //     }
-        // }
     }
-
-    // .new {
-    //     font-size: 32px !important;
-    //     font-weight: bolder;
-    //     background-color: #FF9812;
-    //     padding: 10px 30px;
-    //     width: 74px;
-    // }
-
-    // .viewButton {
-    //     text-align: center;
-
-    //     a {
-    //         color: #fff;
-    //         text-decoration: none;
-    //         font-size: 24px;
-    //         border: solid 2px #CDD6DD;
-    //         padding: 22px 60px;
-    //     }
-    // }
-
 
     .monthly {
         background-color: #470023;
@@ -1166,7 +1108,102 @@ main {
     font-size: 16px;
 }
 
+#topPage-img-about {
+    background-image: url(../images/kv.jpg);
+}
 
+#topPage-img-event {
+    background-image: url(../images/007.jpg);
+}
+
+#topPage-img-menu {
+    background-image: url(../images/001.jpg);
+}
+
+#topPage-img-news {
+    background-image: url(../images/008.jpg);
+}
+
+
+// menu
+// main
+
+main {
+
+    .menuHtml-wrapper {
+
+        background-color: #212121;
+        height: 4850px;
+        text-align: center;
+
+        .menu-item {
+            margin-bottom: 110px;
+            margin-left: 170px;
+
+            h2 {
+                margin-bottom: 90px;
+                text-align: start;
+            }
+
+            &:nth-child(1) {
+                padding-top: 130px;
+            }
+
+            .row {
+                margin-left: 50px;
+
+                .col {
+
+                    .card {
+                        width: 377px;
+                        height: 629px;
+                        object-fit: cover;
+
+                        img {
+                            height: 408px;
+                        }
+
+                        .card-body {
+                            height: 221px;
+
+                            h3 {
+                                font-size: 24px;
+                                font-weight: bolder;
+                                margin-top: 35px;
+                                margin-bottom: 16px;
+                            }
+
+                            p {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .whisky {
+
+            .menu-p-color {
+                color: #fff;
+                text-align: start;
+                margin-top: 90px;
+                font-size: 24px;
+                margin-left: 50px;
+            }
+        }
+
+        .cocktail,.softDrink {
+            color: #fff;
+            font-size: 24px;
+            text-align: start;
+
+            p,ul > li {
+                margin-left: 50px;
+            }
+        }
+    }
+}
 
 
 // news
@@ -1176,9 +1213,8 @@ main {
 
     .news-wrapper {
         background-image: url(../images/kabebami.jpg);
-        height: 3455px;
+        height: 2800px;
         width: 100%;
-        // position: relative;
 
         .news-flex {
             display: flex;
@@ -1190,23 +1226,6 @@ main {
             margin: auto;
             margin-bottom: 88px;
             color: #000000;
-
-            // position: absolute;
-            // top: 50%;
-            // left: 50%;
-
-            // p {
-            //     width: 500px;
-            //     object-fit: cover;
-
-            //     img {
-            //         width: 100%;
-            //     }
-            // }
-
-            &:nth-child(1) {
-                padding-top: 150px;
-            }
 
             p > img {
                 width: 500px;
@@ -1240,8 +1259,6 @@ main {
                 p {
                     font-size: 18px;
                     line-height: 30px;
-                    // width: 40%;
-                    // margin: 0;
                 }
 
                 a {
