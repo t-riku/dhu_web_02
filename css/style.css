@@ -13,7 +13,7 @@ header p {
   margin-top: auto;
   margin-left: 140px;
 }
-header p > img {
+header p > a > img {
   width: 229px;
   height: 50px;
   margin: auto;
@@ -101,6 +101,9 @@ main .home-intro .image001 {
   left: 30%;
   z-index: -1;
 }
+main .home-intro p {
+  margin-bottom: 0;
+}
 main .home-intro .intro-wrapper {
   position: absolute;
   top: 78%;
@@ -125,7 +128,6 @@ main .home-menu {
   position: relative;
   background-image: url(../images/006.jpg);
   height: 1288px;
-  background-attachment: inherit;
 }
 main .home-menu .menu-bg-white {
   height: 100%;
@@ -208,6 +210,7 @@ main .home-event {
 }
 main .home-event p {
   width: 50%;
+  margin-bottom: 0;
 }
 main .home-event p > img {
   height: 1079px;
@@ -249,7 +252,6 @@ main .home-contact {
   background-image: url(../images/kabebami.jpg);
   position: relative;
   height: 930px;
-  background-attachment: inherit;
   text-align: center;
 }
 main .home-contact .contact-sentence {
@@ -350,6 +352,9 @@ footer nav ul li + li {
 footer small {
   color: #959595;
 }
+footer p {
+  margin-bottom: 0;
+}
 
 @media only screen and (max-width: 1600px) {
   header {
@@ -437,6 +442,8 @@ footer small {
   }
   main .home-event p > img {
     height: 800px;
+    width: 100%;
+    object-fit: cover;
   }
   main .home-event .home-sentence {
     height: 800px;
@@ -464,29 +471,84 @@ footer small {
     top: 61%;
     left: 50%;
   }
+
+  footer img {
+    height: 100px;
+    width: auto;
+    margin-top: 11px;
+    margin-bottom: 22px;
+  }
+  footer .sns {
+    width: 200px;
+    margin: auto;
+    margin-bottom: 22px;
+  }
+  footer .sns .icons {
+    display: flex;
+  }
+  footer .sns .icons li {
+    list-style: none;
+  }
+  footer .sns .icons li a {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+  }
+  footer .sns .icons li a span {
+    display: none;
+  }
+  footer .sns .icons li + li {
+    margin-left: 32px;
+  }
+  footer nav {
+    width: 530px;
+    margin: auto;
+  }
+  footer nav ul {
+    display: flex;
+  }
+  footer nav ul li {
+    list-style: none;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  footer nav ul li a {
+    font-size: 16px;
+    color: #959595;
+    text-decoration: none;
+  }
+  footer nav ul li + li {
+    border-left: solid 1px #959595;
+  }
+  footer small {
+    color: #959595;
+  }
+  footer p {
+    margin-bottom: 0;
+  }
 }
 @media only screen and (max-width: 1200px) {
   main .home-mainLogo {
-    height: 880px;
+    height: 700px;
   }
   main .home-intro {
-    height: 900px;
+    height: 700px;
   }
   main .home-intro .image002 {
-    height: 250px;
-    width: 350px;
+    height: 200px;
+    width: 300px;
     top: 6%;
     left: 50%;
   }
   main .home-intro .image003 {
-    height: 300px;
-    width: 320px;
+    height: 250px;
+    width: 270px;
     top: 15%;
     left: 20%;
   }
   main .home-intro .image001 {
-    height: 300px;
-    width: 480px;
+    height: 250px;
+    width: 430px;
     top: 37%;
     left: 40%;
   }
@@ -495,36 +557,36 @@ footer small {
     left: 12%;
   }
   main .home-intro .intro-wrapper h1 {
-    font-size: 34px;
+    font-size: 28px;
     margin-bottom: 20px;
   }
   main .home-intro .intro-wrapper p {
-    font-size: 20px;
+    font-size: 18px;
   }
   main .home-intro a {
     top: 90%;
     left: 78%;
   }
   main .home-menu {
-    height: 850px;
+    height: 700px;
   }
   main .home-menu .menu-bg-white {
     height: 100%;
     background-color: rgba(255, 255, 255, 0.5);
   }
   main .home-menu .menu-wrapper {
-    height: 750px;
+    height: 650px;
   }
   main .home-menu .menu-wrapper .menu-box {
     width: 90%;
   }
   main .home-menu .menu-wrapper .menu-box .card-group .card {
-    height: 560px;
+    height: 460px;
   }
   main .home-menu .menu-wrapper .menu-box .card-group .card .card-body img {
-    height: 200px;
+    height: 150px;
   }
-  main .home-menu .menu-wrapper .menu-box .card-group .card .card-body h2 {
+  main .home-menu .menu-wrapper .menu-box .card-group .card .card-body .text02 {
     font-size: 20px;
   }
   main .home-menu .menu-wrapper .menu-box .card-group .card .card-body .text04 {
@@ -532,6 +594,44 @@ footer small {
     margin-left: 33px;
     margin-right: 4px;
     margin-bottom: 5px;
+  }
+  main .home-menu .menu-wrapper .menu-box a {
+    display: none;
+  }
+  main .home-event {
+    height: 550px;
+  }
+  main .home-event p > img {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+  }
+  main .home-event .home-sentence {
+    height: 600px;
+    width: 50%;
+    padding-top: 75px;
+  }
+  main .home-event .home-sentence h1 {
+    font-size: 45px;
+    width: 380px;
+  }
+  main .home-contact {
+    height: 500px;
+  }
+  main .home-contact .contact-sentence {
+    height: 350px;
+    width: 65%;
+  }
+  main .home-contact .contact-sentence h2 {
+    font-size: 26px;
+    white-space: nowrap;
+  }
+  main .home-contact .contact-sentence p {
+    font-size: 16px;
+  }
+  main .home-contact .contact-sentence .sentence02 {
+    top: 61%;
+    left: 50%;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -669,7 +769,9 @@ main .topPage h1 {
   -ms-transform: translate(-82%, -56%);
   -webkit-transform: translate(-82%, -56%);
   transform: translate(-82%, -56%);
-  padding-left: 30px;
+  padding-left: 40px;
+  font: italic normal bold 100px/130px PT Sans;
+  font-weight: bold;
 }
 main .information {
   background-color: #212121;
@@ -724,6 +826,14 @@ main .heading {
 main .carousel-wrapper .carousel {
   position: relative;
 }
+main .carousel-wrapper .carousel h2 {
+  position: absolute;
+  top: 12%;
+  left: 14%;
+  transform: translateY(-12%) translateX(-14%);
+  -webkit-transform: translateY(-12%) translateX(-14%);
+  z-index: 2;
+}
 main .carousel-wrapper .carousel .crausel-inner {
   width: 100%;
   max-height: 1000px !important;
@@ -735,6 +845,9 @@ main .access {
   height: 1190px;
   width: 100%;
   background-image: url(../images/kabebami.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
 }
 main .access h2 {
@@ -760,6 +873,144 @@ main .access img {
   height: auto;
 }
 
+@media only screen and (max-width: 1600px) {
+  main .topPage {
+    height: 750px;
+    width: auto;
+  }
+  main .topPage h1 {
+    color: #fff;
+    font-size: 90px !important;
+    border-bottom: solid 3px #fff;
+    width: 600px;
+    position: absolute;
+    top: 82%;
+    left: 38%;
+    -ms-transform: translate(-82%, -38%);
+    -webkit-transform: translate(-82%, -38%);
+    transform: translate(-82%, -38%);
+    padding-left: 40px;
+    font: italic normal bold 100px/130px PT Sans;
+    font-weight: bold;
+  }
+  main .information {
+    height: 700px;
+    width: auto;
+  }
+  main .information h2 {
+    top: 12%;
+    left: 18%;
+    transform: translateY(-15%) translateX(-20%);
+    -webkit-transform: translateY(-15%) translateX(-20%);
+  }
+  main .information .info-flex {
+    top: 75%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+  }
+  main .information .info-flex p > img {
+    height: 300px;
+    margin-right: 150px;
+  }
+  main .information .info-flex .info-sentence {
+    height: 650px;
+  }
+  main .information .info-flex .info-sentence h3 {
+    font-size: 36px;
+  }
+  main .information .info-flex .info-sentence p {
+    font-size: 20px;
+  }
+  main .heading {
+    font-size: 40px;
+    font-weight: bolder;
+    border-bottom: solid 2px #fff;
+    width: 450px;
+    padding-left: 35px;
+    padding-bottom: 15px;
+    color: #fff;
+  }
+  main .carousel-wrapper .carousel {
+    position: relative;
+  }
+  main .carousel-wrapper .carousel h2 {
+    position: absolute;
+    top: 12%;
+    left: 14%;
+    transform: translateY(-12%) translateX(-14%);
+    -webkit-transform: translateY(-12%) translateX(-14%);
+    z-index: 2;
+  }
+  main .carousel-wrapper .carousel .crausel-inner {
+    width: 100%;
+    max-height: 1000px !important;
+  }
+  main .carousel-wrapper .carousel .crausel-inner .carousel-item img {
+    width: 100%;
+  }
+  main .access {
+    height: 700px;
+  }
+  main .access h2 {
+    position: absolute;
+    top: 15%;
+    left: 28%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+  }
+  main .access p {
+    position: absolute;
+    top: 28%;
+    left: 35%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    color: #fff;
+    font-size: 24px;
+  }
+  main .access img {
+    position: absolute;
+    top: 36%;
+    left: 12%;
+    width: 1000px;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  main .topPage h1 {
+    font-size: 80px !important;
+    top: 82%;
+    left: 50%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  main .access {
+    height: 650px;
+  }
+  main .access h2 {
+    position: absolute;
+    top: 15%;
+    left: 28%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+  }
+  main .access p {
+    position: absolute;
+    top: 28%;
+    left: 35%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    color: #fff;
+    font-size: 20px;
+  }
+  main .access img {
+    position: absolute;
+    top: 36%;
+    left: 10%;
+    width: 900px;
+    height: auto;
+  }
+}
 main .topPage {
   background-repeat: no-repeat;
   background-size: cover;
@@ -858,6 +1109,145 @@ main .monthly .events-flex {
   background-image: url(../images/008.jpg);
 }
 
+@media only screen and (max-width: 1600px) {
+  main .topPage {
+    height: 750px;
+  }
+  main .events {
+    height: 1680px;
+  }
+  main .events .heading {
+    width: 560px;
+  }
+  main .events h2 {
+    font-size: 50px;
+    margin-bottom: 80px;
+    padding-top: 142px;
+    margin-left: 167px;
+  }
+  main .events .events-flex {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 106px;
+    margin-right: 80px;
+  }
+  main .events .events-flex p a img {
+    height: 501px;
+    width: 512px;
+    object-fit: cover;
+  }
+  main .events .events-flex .events-sentence {
+    margin-left: 90px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  main .events .events-flex .events-sentence h3 {
+    font-size: 30px;
+    margin-bottom: 23px;
+  }
+  main .events .events-flex .events-sentence p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 33px;
+  }
+  main .events .events-flex .events-sentence a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: lighter;
+  }
+  main .monthly {
+    background-color: #470023;
+  }
+  main .monthly .events-flex {
+    margin-right: 0;
+    margin-left: 150px;
+    margin-bottom: 130px;
+  }
+  main .monthly .events-flex .events-sentence p {
+    width: 80%;
+  }
+
+  .new {
+    font-size: 32px !important;
+    font-weight: bolder;
+    background-color: #FF9812;
+    padding: 10px 30px;
+    width: 74px;
+  }
+
+  .viewButton a {
+    font-size: 18px;
+    padding: 20px 50px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  main .events {
+    height: 1380px;
+  }
+  main .events .heading {
+    width: 560px;
+  }
+  main .events h2 {
+    font-size: 50px;
+    margin-bottom: 80px;
+    padding-top: 100px;
+    margin-left: 87px;
+  }
+  main .events .events-flex {
+    margin-bottom: 106px;
+    margin-right: 80px;
+  }
+  main .events .events-flex p a img {
+    height: 401px;
+    width: 412px;
+  }
+  main .events .events-flex .events-sentence {
+    margin-left: 90px;
+  }
+  main .events .events-flex .events-sentence h3 {
+    font-size: 30px;
+    margin-bottom: 23px;
+  }
+  main .events .events-flex .events-sentence p {
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 22px;
+  }
+  main .events .events-flex .events-sentence a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: lighter;
+  }
+  main .special .events-flex {
+    margin-left: 150px;
+  }
+  main .monthly {
+    background-color: #470023;
+  }
+  main .monthly .events-flex {
+    margin-right: 0;
+    margin-left: 150px;
+    margin-bottom: 100px;
+  }
+  main .monthly .events-flex .events-sentence p {
+    width: 80%;
+  }
+
+  .new {
+    font-size: 32px !important;
+    font-weight: bolder;
+    background-color: #FF9812;
+    padding: 10px 30px;
+    width: 74px;
+  }
+
+  .viewButton a {
+    font-size: 18px;
+    padding: 20px 50px;
+  }
+}
 main .menuHtml-wrapper {
   background-color: #212121;
   height: 4850px;
@@ -913,6 +1303,49 @@ main .menuHtml-wrapper .cocktail p, main .menuHtml-wrapper .cocktail ul > li, ma
   margin-left: 50px;
 }
 
+@media only screen and (max-width: 1600px) {
+  main .menuHtml-wrapper {
+    height: 3500px;
+  }
+  main .menuHtml-wrapper .menu-item {
+    margin-bottom: 60px;
+    margin-left: 70px;
+  }
+  main .menuHtml-wrapper .menu-item h2 {
+    margin-bottom: 60px;
+  }
+  main .menuHtml-wrapper .menu-item:nth-child(1) {
+    padding-top: 130px;
+  }
+  main .menuHtml-wrapper .menu-item .row {
+    margin-left: 50px;
+  }
+  main .menuHtml-wrapper .menu-item .row .col .card {
+    width: 257px;
+    height: 469px;
+  }
+  main .menuHtml-wrapper .menu-item .row .col .card img {
+    height: 260px;
+  }
+  main .menuHtml-wrapper .menu-item .row .col .card .card-body {
+    height: 151px;
+  }
+  main .menuHtml-wrapper .menu-item .row .col .card .card-body h3 {
+    font-size: 17px;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 12px;
+  }
+  main .menuHtml-wrapper .menu-item .row .col .card .card-body p {
+    font-size: 16px;
+    font-size: small;
+  }
+  main .menuHtml-wrapper .whisky .menu-p-color {
+    margin-top: 90px;
+    font-size: 24px;
+    margin-left: 50px;
+  }
+}
 main .news-wrapper {
   background-image: url(../images/kabebami.jpg);
   height: 2800px;
@@ -965,4 +1398,53 @@ main .news-wrapper .news-flex .news-sentence a {
 }
 main .news-wrapper .news-flex .news-sentence .view-marginTop {
   margin-top: 300px;
+}
+main .news-wrapper .news-top-margin {
+  padding-top: 149px;
+}
+
+@media only screen and (max-width: 1600px) {
+  main .news-wrapper {
+    height: 2200px;
+  }
+  main .news-wrapper .news-flex {
+    height: 548px;
+    margin-bottom: 88px;
+  }
+  main .news-wrapper .news-flex p > img {
+    width: 380px;
+    height: 380px;
+  }
+  main .news-wrapper .news-flex .news-sentence {
+    margin-left: 117px;
+  }
+  main .news-wrapper .news-flex .news-sentence h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  main .news-wrapper .news-flex .news-sentence p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  main .news-wrapper .news-flex .news-sentence a {
+    font-size: 16px;
+  }
+  main .news-wrapper .news-flex .news-sentence .view-marginTop {
+    margin-top: 100px;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  main .news-wrapper .news-flex p > img {
+    width: 320px;
+    height: 320px;
+  }
+  main .news-wrapper .news-flex .news-sentence {
+    margin-left: 57px;
+  }
+  main .news-wrapper .news-flex .news-sentence p {
+    line-height: 18px;
+  }
+  main .news-wrapper .news-flex .news-sentence a {
+    font-size: small;
+  }
 }/*# sourceMappingURL=style.css.map */
