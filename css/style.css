@@ -390,74 +390,106 @@ footer p {
   }
 
   main .home-mainLogo {
-    height: 830px;
+    height: 770px;
   }
   main .home-intro {
-    height: 920px;
+    height: 800px;
   }
   main .home-intro .image002 {
-    height: 270px;
-    width: 350px;
+    height: 240px;
+    width: 320px;
     top: 7%;
-    left: 50%;
+    left: 47%;
   }
   main .home-intro .image003 {
-    height: 330px;
-    width: 320px;
+    height: 300px;
+    width: 290px;
     top: 15%;
     left: 22%;
   }
   main .home-intro .image001 {
-    height: 320px;
-    width: 540px;
+    height: 290px;
+    width: 480px;
     top: 40%;
     left: 40%;
   }
   main .home-intro .intro-wrapper h1 {
-    font-size: 42px;
+    font-size: 36px;
     margin-bottom: 15px;
   }
   main .home-intro .intro-wrapper p {
-    font-size: 21px;
+    font-size: 18px;
   }
   main .home-intro a {
     top: 90%;
     left: 78%;
   }
   main .home-menu {
-    height: 900px;
+    height: 750px;
   }
   main .home-menu .menu-bg-white {
     height: 100%;
     background-color: rgba(255, 255, 255, 0.5);
   }
   main .home-menu .menu-wrapper {
-    height: 800px;
+    height: 680px;
   }
   main .home-menu .menu-wrapper .menu-box a {
     margin-top: 35px;
   }
+  main .home-menu .menu-wrapper .menu-box .card-group .card .card-body {
+    height: 450px;
+  }
   main .home-menu .menu-wrapper .menu-box .card-group .card .card-body img {
-    height: 200px;
+    height: 180px;
+  }
+  main .home-menu .menu-wrapper .menu-box .card-group .card .card-body .text02 {
+    font-size: 20px;
+    margin-top: 23px;
+    margin-left: 23px;
+  }
+  main .home-menu .menu-wrapper .menu-box .card-group .card .card-body .text03 {
+    font-size: 16px;
+    margin-bottom: 3px;
+    margin-left: 23px;
+  }
+  main .home-menu .menu-wrapper .menu-box .card-group .card .card-body .text04 {
+    margin-top: 0px;
+  }
+  main .home-menu .menu-wrapper .menu-box .card-group .card .card-body p {
+    font-size: 18px;
+  }
+  main .home-menu .menu-wrapper .menu-box a {
+    margin-top: 15px;
+  }
+  main .home-event {
+    height: 550px;
   }
   main .home-event p > img {
-    height: 800px;
+    height: 550px;
     width: 100%;
     object-fit: cover;
   }
   main .home-event .home-sentence {
-    height: 800px;
+    height: 550px;
     width: 50%;
-    padding-top: 210px;
+    padding-top: 100px;
   }
   main .home-event .home-sentence h1 {
-    width: 380px;
+    width: 550px;
+    font-size: 45px;
+  }
+  main .home-event .home-sentence p {
+    font-size: 16px;
+  }
+  main .home-event .home-sentence a {
+    padding-right: 70px;
   }
   main .home-contact {
-    height: 600px;
+    height: 400px;
   }
   main .home-contact .contact-sentence {
-    height: 350px;
+    height: 300px;
     width: 65%;
   }
   main .home-contact .contact-sentence h2 {
@@ -1111,10 +1143,10 @@ main .monthly .events-flex {
 
 @media only screen and (max-width: 1600px) {
   main .topPage {
-    height: 750px;
+    height: 745px;
   }
   main .events {
-    height: 1680px;
+    height: 1500px;
   }
   main .events .heading {
     width: 560px;
@@ -1132,8 +1164,8 @@ main .monthly .events-flex {
     margin-right: 80px;
   }
   main .events .events-flex p a img {
-    height: 501px;
-    width: 512px;
+    height: 451px;
+    width: 452px;
     object-fit: cover;
   }
   main .events .events-flex .events-sentence {
@@ -1148,7 +1180,7 @@ main .monthly .events-flex {
   main .events .events-flex .events-sentence p {
     font-size: 16px;
     line-height: 28px;
-    margin-bottom: 33px;
+    margin-bottom: 18px;
   }
   main .events .events-flex .events-sentence a {
     font-size: 16px;
@@ -1305,7 +1337,7 @@ main .menuHtml-wrapper .cocktail p, main .menuHtml-wrapper .cocktail ul > li, ma
 
 @media only screen and (max-width: 1600px) {
   main .menuHtml-wrapper {
-    height: 3500px;
+    height: 3600px;
   }
   main .menuHtml-wrapper .menu-item {
     margin-bottom: 60px;
@@ -1321,14 +1353,14 @@ main .menuHtml-wrapper .cocktail p, main .menuHtml-wrapper .cocktail ul > li, ma
     margin-left: 50px;
   }
   main .menuHtml-wrapper .menu-item .row .col .card {
-    width: 257px;
-    height: 469px;
+    width: 315px;
+    height: 529px;
   }
   main .menuHtml-wrapper .menu-item .row .col .card img {
     height: 260px;
   }
   main .menuHtml-wrapper .menu-item .row .col .card .card-body {
-    height: 151px;
+    height: 200px;
   }
   main .menuHtml-wrapper .menu-item .row .col .card .card-body h3 {
     font-size: 17px;
@@ -1405,10 +1437,10 @@ main .news-wrapper .news-top-margin {
 
 @media only screen and (max-width: 1600px) {
   main .news-wrapper {
-    height: 2200px;
+    height: 1900px;
   }
   main .news-wrapper .news-flex {
-    height: 548px;
+    height: 458px;
     margin-bottom: 88px;
   }
   main .news-wrapper .news-flex p > img {
